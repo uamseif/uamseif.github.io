@@ -1,0 +1,202 @@
+@use 'colors'
+
+button:not(:disabled)
+  cursor: pointer
+
+a
+  color: colors.$primary-color
+  transition: all .2s ease-in-out
+
+  &:hover
+    color: #fff
+
+.btn
+  display: inline-block
+  text-align: center
+  vertical-align: middle
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-color: transparent
+  padding: .375rem .75rem
+  font-size: 1.25rem
+  line-height: 1.5
+  transition: all .2s ease-in-out
+  text-transform: uppercase
+  color: colors.$primary-color
+  border: 1px solid colors.$primary-color
+  min-width: 180px
+
+  &:hover
+    color: #000
+    background-color: colors.$primary-color
+    outline: none
+
+  .btn-text
+    font-weight: bold
+
+  .fab
+    font-size: 25px
+    margin-top: 5px
+
+.reach-out-btn
+  margin-bottom: 20px
+  min-height: 110px
+
+.btn-down
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: auto
+  padding: 0
+  font-size: 26px
+  width: 55px
+  height: 55px
+  line-height: 45px
+  border: 2px solid #fff
+  border-radius: 100% !important
+  color: #fff
+  min-width: 0
+
+  &:hover
+    color: colors.$primary-color !important
+    border-color: colors.$primary-color
+    background-color: hsla(0, 0%, 100%, .1)
+
+.text-monospace
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important
+
+h1
+  font-weight: 700
+  text-transform: uppercase
+  line-height: 1.2
+  font-size: 2.5rem
+
+#navbar
+  font-family: Cabin, Helvetica Neue, Helvetica, Arial, sans-serif
+  margin-bottom: 0
+  text-transform: uppercase
+  // height: 48px
+
+  .centered-stuff
+    display: flex
+    align-items: center
+    width: 50%
+    height: 100%
+    margin: auto
+
+    #navbar-brand
+      height: 100%
+
+    .navbar-list
+      width: 100%
+      // height: 100%
+
+      .navbar-brand
+        float: left !important
+
+      .navbar-item
+        display: inline
+        float: right
+
+        .navbar-link
+          display: block
+          color: #fff
+          text-align: center
+          padding: 1rem 1.2rem
+          letter-spacing: 1px
+          transition: all .2 ease-in-out
+
+          &:hover
+            color: #000
+            background-color: #fff
+
+// @keyframes cursor
+//   from, to
+//     opacity: 0
+//   50%
+//     opacity: 1
+
+// @keyframes typing
+//   from
+//     width: 100%
+//   90%, to
+//     width: 0
+
+@keyframes cursor-blink
+  0%
+    opacity: 1
+  50%
+    opacity: 1
+  50.0001%
+    opacity: 0
+  100%
+    // color: transparent
+    opacity: 0
+
+#landing-section
+  width: 100%
+  height: 100%
+  padding: 0
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('bg-grayscale.jpg')
+  background-size: cover
+  display: table
+  text-align: center
+  color: #fff
+
+  .landing-body
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+    max-width: 720px
+
+    .heading-title
+      font-size: 5rem
+
+      &::after
+        content: "_"
+        // width: 5px
+        // height: 20px
+        // background: #fff
+        // color: #fff !important
+        display: inline-block
+        animation: cursor-blink 1.5s steps(2) infinite
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 1.2
+        font-size: 5rem
+        z-index: 999999
+
+
+
+
+footer
+  padding: 50px 0
+  text-align: center
+
+  p
+    font-size: 14px
+    margin: 0
+    opacity: 0.5
+
+#about-section
+  display: flex
+  width: 40%
+  height: 100%
+  margin: auto
+  text-align: center !important
+  vertical-align: middle
+  justify-content: center
+  align-items: center
+
+#reach-out-section
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 70%
+  height: 100%
+  margin: auto
+  text-align: center !important
+  vertical-align: middle
+
