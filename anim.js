@@ -1,5 +1,6 @@
 window.onload = function() {
-
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    
 function typeEffect(element, speed) {
     var text = "4R3 Y0U 531F";
     var text2 = "SEIF?"
