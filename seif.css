@@ -126,7 +126,7 @@ a:hover {
 .btn .btn-text {
   font-weight: bold;
 }
-.btn .fab {
+.btn .fab, .btn .fa-brands {
   font-size: 25px;
   margin-top: 5px;
 }
